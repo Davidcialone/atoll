@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Accueil', href: '/' },
-  { name: 'About', href: '#' },
+  { name: 'A propos ', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -42,13 +43,13 @@ function NavBar() {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -61,13 +62,13 @@ function NavBar() {
         <div className="sm:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

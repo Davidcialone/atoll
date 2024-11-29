@@ -1,5 +1,7 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}", // Ajoutez tous les fichiers où vous utilisez Tailwind
+  ],
   theme: {
     extend: {},
   },
