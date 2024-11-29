@@ -1,3 +1,5 @@
+import { MachinePark } from "./services/machinePark"
+
 export function KeyFigures() {
     return (
         <div>
@@ -7,6 +9,8 @@ export function KeyFigures() {
                 <p>25 ans d'expérience</p>
                 <p>Découpe laser jusqu'à 25 mm</p>
                 <p>pvraison express et stock disponible</p>
+
+                <MachinePark/>
           
         </div>
     )

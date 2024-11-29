@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function HomePage() {
   return (
@@ -29,6 +30,27 @@ export function HomePage() {
         height="auto">
         Votre navigateur ne supporte pas la lecture de vidéo.
       </video>
+
+     <h3 className="p-2 m-5 border border-gray-300 rounded-lg text-2xl"> NOS SERVICES</h3>
+      <div className="flex justify-evenly p-4 ">
+        <Link to="services" className="flex flex-col p-4 m-2 border border-gray-300 rounded-lg">
+          <h4 className="text-xl font-semibold">Découpe laser</h4>
+          <img src="laserCutting.jpg" alt="Laser Cutting" className="mt-2" />
+        </Link>
+        <Link to="services" className="flex flex-col p-4 m-2 border border-gray-300 rounded-lg">
+          <h4 className="text-xl font-semibold">Pliage</h4>
+          <img src="laserCutting.jpg" alt="Pliage" className="mt-2" />
+        </Link>
+        <Link to="services" className="flex flex-col p-4 m-2 border border-gray-300 rounded-lg">
+          <h4 className="text-xl font-semibold">Oxycoupage</h4>
+          <img src="laserCutting.jpg" alt="Oxycoupage" className="mt-2" />
+        </Link>
+      </div>
+
+
+
+      
     </div>
   );
 }
+
